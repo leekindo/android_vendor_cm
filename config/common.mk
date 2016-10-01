@@ -108,8 +108,6 @@ PRODUCT_PACKAGES += \
 # Optional CM packages
 PRODUCT_PACKAGES += \
     libemoji \
-    LiveWallpapersPicker \
-    PhotoTable \
     Terminal
 
 # Include explicitly to work around GMS issues
@@ -121,19 +119,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
-    CMUpdater \
     LineageSetupWizard \
-    Eleven \
     ExactCalculator \
     LiveLockScreenService \
     LockClock \
     Trebuchet \
     WallpaperPicker \
     WeatherProvider
-
-# Exchange support
-PRODUCT_PACKAGES += \
-    Exchange2
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
@@ -305,9 +297,9 @@ ifeq ($(CM_BUILDTYPE), RELEASE)
     endif
 else
     ifeq ($(CM_VERSION_MAINTENANCE),0)
-        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
+        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)$(CM_EXTRAVERSION)-$(CM_BUILD)
     else
-        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
+        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)$(CM_EXTRAVERSION)-$(CM_BUILD)
     endif
 endif
 
