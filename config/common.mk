@@ -14,7 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
+    ro.build.selinux=0
 
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -103,8 +103,7 @@ PRODUCT_PACKAGES += \
     CMAudioService \
     CMParts \
     Development \
-    Profiles \
-    WeatherManagerService
+    Profiles
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
@@ -124,12 +123,10 @@ PRODUCT_PACKAGES += \
     CustomTiles \
     LineageSetupWizard \
     ExactCalculator \
-    Jelly \
     LiveLockScreenService \
     LockClock \
     Trebuchet \
-    WallpaperPicker \
-    WeatherProvider
+    WallpaperPicker
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
