@@ -124,7 +124,6 @@ PRODUCT_PACKAGES += \
     CustomTiles \
     LineageSetupWizard \
     ExactCalculator \
-    Jelly \
     LiveLockScreenService \
     LockClock \
     Trebuchet \
