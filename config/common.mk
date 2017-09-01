@@ -122,7 +122,6 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LockClock \
     Trebuchet \
-    Updater \
     WallpaperPicker \
     WeatherProvider
 
