@@ -119,8 +119,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     Trebuchet \
     WallpaperPicker \
-    WeatherProvider \
-    LOSCoins
+    WeatherProvider
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
